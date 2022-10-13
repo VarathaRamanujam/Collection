@@ -46,11 +46,13 @@ public class ArrayList_Obj {
 			//System.out.println(o);
 		}
 	
-	Object o1[] = st.toArray();
-	System.out.println(o1[0].getClass());
+//	Object o1[] = st.toArray();
+//	System.out.println(o1[0].getClass());
 		
 		for(Object o:st) {
 			//System.out.println(o);
+			
+			
 			if(o.getClass().equals(String.class))
 			System.out.println(o+"0");
 		}
