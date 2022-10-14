@@ -8,7 +8,49 @@ public class Type_Casting {
 
 	public static void main(String[] args) {
 		Type_Casting obj = new Type_Casting();
-		obj.Type_Casting_list();
+		//obj.Type_Casting_list();
+		obj.Type_Casting_list_1();
+	}
+
+	private void Type_Casting_list_1() {
+		List ls  = new ArrayList();
+		ls.add("String");
+		ls.add(null);
+		ls.add(78);
+		ls.add("String");
+		ls.add(78);
+		String s="Suma_____";
+		ls.add(s);
+		ls.add(null);
+		
+		for(Object o:ls)
+			System.out.println(o);
+		
+		
+		System.out.println();
+		for(Object o :ls) {    // replace null
+			try {
+				if(o==(null)) 
+					o="ff --repacle of null";
+					//System.out.println(o);
+			} catch (Exception e) {
+				System.out.println(o);
+			}System.out.println(o);
+		}System.out.println();
+		
+		for(Object o :ls) { // without null
+			try {
+				if(o!=(null))
+					//o="ff";
+					System.out.println(o);
+			} catch (Exception e) {
+				System.out.println(o);
+			}//System.out.println(o);
+		}
+			
+		
+		
+
 	}
 
 	private void Type_Casting_list() {
@@ -41,7 +83,7 @@ public class Type_Casting {
 	   ll.add(3,2);
 	   System.out.println(ll);
 	   Object o=2;
-	   ll.remove(o);
+	   ll.remove(o); 
 	   System.out.println(ll);
 	 
 //		for(int i=0;i<ls.size();i++) { // muthu question
