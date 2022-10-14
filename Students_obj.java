@@ -15,20 +15,22 @@ public class Students_obj {
 		this.UG=UG;
 	}
 	
+	public Students_obj() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name=name;
 	}
-	
 	public void setAge(int age) {
 		this.age=age;
 	}
 	public int getAge() {
 		return age;
 	}
-	
 	public void setRoll(int roll) {
 		this.roll=roll;
 	}
@@ -41,9 +43,11 @@ public class Students_obj {
 	public String getUG() {
 		return UG;
 	}
+//	public static void main(String arg[]) {
+//		Students_obj ob = new Students_obj();
+//	}
 	
 	public String toString() {
-		return " Age = "+age+",name = "+name+" ,roll ="+roll+" ,UG ="+UG +" ";
-		
+		return " Age = "+",name = "+name+" ,roll ="+roll+" ,UG ="+UG +" ";
 	}
 }

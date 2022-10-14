@@ -47,6 +47,6 @@ public void setDisplay_size(double display_size) {
 @Override
 
 public String toString() {
-	return " brand=" + brand + ", price=" + price + ", display_size=" + display_size + "";
+	return "brand=" + brand + ", price=" + price + ", display_size=" + display_size + "";
 }
 }
