@@ -68,7 +68,7 @@ public void setRam(int ram) {
 
 @Override
 public String toString() {
-	return "brand=" + brand + ", model=" + model + ", price=" + price + ", ram=" + ram + "";
+	return "> brand=" + brand + "\t, model=" + model + "\t, price=" + price + "\t, ram=" + ram + "";
 }
 
 }

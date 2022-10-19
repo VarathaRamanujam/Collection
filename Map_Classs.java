@@ -1,6 +1,7 @@
 package Collection;
 
 import java.util.*;
+import java.util.function.Consumer;
 
 public class Map_Classs     {
 
@@ -27,22 +28,41 @@ public class Map_Classs     {
 		
 		
 		Map_Classs obj = new Map_Classs();
+		Object o = new Object();
+		System.out.println(o.hashCode());
 		//obj.Simple_Prb_Above_50();
 		//obj.Simple_Prb_Start();
-		obj.Simple_Prb_Iterator();
+		//obj.Simple_Prb_Iterator();
+		System.out.println(obj.hashCode());//@override the hascode
 		
 	}
-
 	
+	public int hashCode() {	
+	return 1;
+	}
+	 
 	private void Simple_Prb_Iterator() {  
-		List lt = new ArrayList();
+		List<Integer> lt = new ArrayList();
 		lt.add(67);
 		lt.add(46);
 		lt.add(676);
+		lt.add(670);
+		lt.add(460);
+		lt.add(66);
+		lt.add(607);
+		lt.add(436);
+		lt.add(6706);
+		lt.add(67);
 		
 		ListIterator tt = lt.listIterator();
-		while(tt.hasPrevious() )
-			System.out.println(tt.nextIndex());
+		  int i=1;    
+		System.out.println(lt.toArray().toString());
+		// while(tt.hasNext() )
+		  // System.out.println (tt.next().toString().contains( lt.toArray().toString()));
+			 // tt.remove();
+		
+		while(tt.hasNext())
+			System.out.println(tt.next().equals(l t));
 	}
 
 
@@ -74,7 +94,8 @@ public class Map_Classs     {
 			String s1= o.toString(); 
 			  if(s1.startsWith("K")  ||s1.startsWith("k"))
 			      System.out.println(s1+" "+"Rs:"+ls.get(o));
-		}System.out.println();
+		}System.out.println(); 
+		
 		for(Object o:s) {
 			String s1= o.toString(); 
 			  if(s1.contains("Dosa"))
