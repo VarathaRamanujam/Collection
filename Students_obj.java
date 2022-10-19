@@ -48,6 +48,6 @@ public class Students_obj {
 //	}
 	
 	public String toString() {
-		return " Age = "+",name = "+name+" ,roll ="+roll+" ,UG ="+UG +" ";
+		return "Age = "+age+",name = "+name+" \t,roll ="+roll+" \t,UG ="+UG +" ";
 	}
 }
