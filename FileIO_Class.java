@@ -5,14 +5,19 @@ import java.io.*;
 public class FileIO_Class {
 
 	public static void main(String[] args) throws IOException  {
-		File folder = new File("/home/ramanujam/Downloads/eclipse-installer/My_Basic_program/src/Collection");
+		File folder = new File("//home//ramanujam//Downloads//eclipse-installer//My_Basic_program//src//Collection");
+//		System.out.println(folder.mkdir());
+//		folder.createNewFile();
 		
 		String s ="ghjkfnn  y gtv yu jjjf ";
 		char c[] = s.toCharArray();
 		
-//		String [] ls = folder.list();
-//		for(String ss:ls)
-//		System.out.println(ss);
+		String [] ls = folder.list();
+		File[]ff=folder.listFiles();
+		System.out.println(ff[9].getName().charAt(0)=='J');
+		for(File ss:ff)
+			//if(ss.charAt(0)=='T' )
+		     System.out.println(ss);
 //		
 		System.out.println(folder.exists());
 		try {
@@ -40,17 +45,17 @@ public class FileIO_Class {
 		
 		System.out.println();
 		
-		
-	try {
-		FileReader fr2 = new FileReader(f); //Read the file 
-			int i = fr2.read();
-			while(i!=-1) {
-				System.out.print((char)i);
-				i= fr2.read();
-			}
-	} catch (FileNotFoundException e) {
-		e.printStackTrace();
-	}
+//		
+//	try {
+//		FileReader fr2 = new FileReader(f); //Read the file 
+//			int i = fr2.read();
+//			while(i!=-1) {
+//				System.out.print((char)i);
+//				i= fr2.read();
+//			}
+//	} catch (FileNotFoundException e) {
+//		e.printStackTrace();
+//	}
 		
 		
 	}

@@ -59,7 +59,7 @@ public class ArrayList_Obj {
 		
 //		AvgStudent(st);
 //		HighestPrice(mo);
-//		SortByAlbpa(lo);
+		SortByAlbpa(lo);
 		int sum=0,avg=0;
 		for(int i=0;i<st.size();i++) {
 			sum+=((Students_obj) st.get(i)).age;
@@ -76,7 +76,7 @@ public class ArrayList_Obj {
 //	System.out.println(lo);
 	}
 
-	  static void SortByAlbpa(List<Laptop_obj> lo) {
+	public static   void SortByAlbpa(List<Laptop_obj> lo) {
 		  String s[]=new String[lo.size()];
 		  for(int i=0;i<lo.size();i++) {
 			  s[i]=lo.get(i).brand;
