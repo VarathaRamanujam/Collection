@@ -62,7 +62,7 @@ public class Map_Classs     {
 			 // tt.remove();
 		
 		while(tt.hasNext())
-			System.out.println(tt.next().equals(l t));
+			System.out.println(tt.next().equals(lt));
 	}
 
 
